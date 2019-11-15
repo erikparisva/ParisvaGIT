@@ -19,7 +19,7 @@
         }
         public override string ToString()
         {
-            return $"Hero: {_name}\nLocation: {_location}";
+            return $"Hero {_name} keeps the peace in {_location}.";
         }
     }
 }
