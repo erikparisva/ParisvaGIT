@@ -41,6 +41,11 @@ namespace HeroProject
             rescued = s1.rescue(inDanger);
             Console.WriteLine(s1 + $" saved + {rescued}/{inDanger}");
             loadHeroes("Kangelased.txt");
+            foreach (Hero hero in heroes)
+            {
+                Console.WriteLine(hero);
+                Console.WriteLine("Could rescue 1000 / "+hero.rescue(1000));
+            }
         }
     }
 }
